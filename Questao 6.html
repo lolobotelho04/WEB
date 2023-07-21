@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+</head>
+
+<body>
+    <script>
+        function categoriaNadador(idade) {
+            if (idade < 8) {
+                return "Infantil";
+            } else if (idade < 12) {
+                return "Juvenil";
+            } else {
+                return "Jovem";
+            }
+        }
+
+        let idade = parseInt(prompt("Digite a idade do nadador:"));
+        alert(`A categoria do nadador é ${categoriaNadador(idade)}.`);
+    </script>
+</body>
+
+</html>

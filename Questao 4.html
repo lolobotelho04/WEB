@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 4</title>
+</head>
+
+<body>
+    <script>
+        let clientes_preferenciais = [];
+        let clientes_fila_normal = [];
+
+        while (true) {
+            let nome = prompt("Digite o nome do cliente (ou 'Fim' para sair):");
+            if (nome === "Fim") {
+                break;
+            }
+            let idade = parseInt(prompt("Digite a idade do cliente:"));
+            if (idade >= 60) {
+                clientes_preferenciais.push(nome);
+            } else {
+                clientes_fila_normal.push(nome);
+            }
+        }
+
+        alert("Clientes preferenciais: " + clientes_preferenciais);
+        alert("Clientes na fila normal: " + clientes_fila_normal);
+    </script>
+</body>
+
+</html>

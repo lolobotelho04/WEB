@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 8</title>
+</head>
+
+<body>
+    <script>
+        function verificarEmprestimo(valorParcela, renda) {
+            if (valorParcela <= renda * 0.3) {
+                return "EMPRÉSTIMO APROVADO";
+            } else {
+                return "EMPRÉSTIMO NÃO APROVADO";
+            }
+        }
+
+        let valorParcela = parseFloat(prompt("Digite o valor da parcela:"));
+        let rendaMensal = parseFloat(prompt("Digite a renda mensal do cliente:"));
+        alert(verificarEmprestimo(valorParcela, rendaMensal));
+    </script>
+</body>
+
+</html>

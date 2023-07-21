@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 7</title>
+</head>
+
+<body>
+    <script>
+        function converterParaMoeda(valor, tipoMoeda) {
+            if (tipoMoeda === "d") {
+                return valor / 5.50;
+            } else if (tipoMoeda === "e") {
+                return valor / 7.00;
+            }
+        }
+
+        let valorEmReal = parseFloat(prompt("Digite um valor em real:"));
+        let tipoMoeda = prompt(`Digite 'd' para dólar ou 'e' para euro:`);
+        let valorConvertido = converterParaMoeda(valorEmReal, tipoMoeda);
+        alert(`O valor convertido é ${valorConvertido.toFixed(2)}.`);
+    </script>
+</body>
+
+</html>

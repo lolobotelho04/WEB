@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5</title>
+</head>
+
+<body>
+    <script>
+ function calcularIdade(anoNascimento) {
+    let anoAtual = new Date().getFullYear();
+    return anoAtual - anoNascimento;
+}
+
+let anoNascimento = parseInt(prompt("Digite o ano de nascimento:"));
+alert(`A idade é ${calcularIdade(anoNascimento)} anos.`);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
+</head>
+
+<body>
+    <script>
+        let temperaturas = [];
+
+        for (let i = 0; i < 7; i++) {
+            let temperatura = parseFloat(prompt(`Digite a temperatura média do dia ${i + 1}:`));
+            temperaturas.push(temperatura);
+        }
+
+        alert("Menor temperatura da semana: " + Math.min(...temperaturas));
+        alert("Maior temperatura da semana: " + Math.max(...temperaturas));
+    </script>
+</body>
+
+</html>
